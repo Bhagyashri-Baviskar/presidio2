@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Real Estate Platform</h1>
+    </header>
+
+    <main>
+        <!-- Login / Registration Form -->
+        <section id="registration">
+            <h2>Register</h2>
+            <form id="registerForm">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+                <label for="userType">I am a:</label>
+                <select id="userType" name="userType" required>
+                    <option value="buyer">Buyer</option>
+                    <option value="seller">Seller</option>
+                </select>
+
+                <button type="submit">Register</button>
+            </form>
+        </section>
+
+        <!-- Seller Property Posting Form -->
+        <section id="propertyPosting" style="display:none;">
+            <h2>Post Your Property</h2>
+            <form id="propertyForm">
+                <label for="place">Place:</label>
+                <input type="text" id="place" name="place" required>
+
+                <label for="area">Area (in sq ft):</label>
+                <input type="number" id="area" name="area" required>
+
+                <label for="bedrooms">Number of Bedrooms:</label>
+                <input type="number" id="bedrooms" name="bedrooms" required>
+
+                <label for="bathrooms">Number of Bathrooms:</label>
+                <input type="number" id="bathrooms" name="bathrooms" required>
+
+                <label for="nearby">Nearby Facilities (Hospitals, Colleges, etc.):</label>
+                <input type="text" id="nearby" name="nearby" required>
+
+                <button type="submit">Post Property</button>
+            </form>
+        </section>
+
+        <!-- Buyer Property Listing -->
+        <section id="propertyListing">
+            <h2>Available Properties</h2>
+            <div class="property">
+                <p>Place: City Center</p>
+                <p>Area: 1200 sq ft</p>
+                <p>Bedrooms: 3</p>
+                <p>Bathrooms: 2</p>
+                <p>Nearby: Hospital, College</p>
+                <button class="interestButton">I'm Interested</button>
+            </div>
+            <!-- More properties can be listed here -->
+        </section>
+    </main>
+</body>
+</html>

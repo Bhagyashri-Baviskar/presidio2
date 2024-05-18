@@ -1,0 +1,93 @@
+/* Add the necessary styles for the additional elements */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    margin: 2em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    background-color: #fff;
+    padding: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+input, select, button {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    font-size: 1em;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.property {
+    background-color: #fff;
+    padding: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.property p {
+    margin: 0.5em 0;
+}
+
+.interestButton, .likeButton {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5em;
+    cursor: pointer;
+    margin-right: 0.5em;
+}
+
+.interestButton:hover, .likeButton:hover {
+    background-color: #555;
+}
+
+#pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.pageButton {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    margin: 0 0.5em;
+}
+
+.pageButton:hover {
+    background-color: #555;
+}
